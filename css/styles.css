@@ -44,11 +44,9 @@ img {
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
     outline: 2px solid crimson;
 }
 
@@ -57,6 +55,22 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-navigation {
+    display: flex;
+    margin-right: auto;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-logo {
@@ -67,6 +81,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
+    margin-right: 76px;
 }
 .header-logo .accent {
     color: #4D5AE5;
@@ -89,6 +104,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
+    margin-right: 40px;
 }
 .header-email:hover,
 .header-email:focus,
@@ -101,23 +117,35 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
+}
+
+.header-address {
+    display: flex;
+}
 
 /*------------------ HERO -------------------*/
 
-}
+
 .hero {
     background: #2E2F42;
     color: #FFFFFF;
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
+    margin: 0 auto;
 }
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     padding-bottom: 48px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn {
+    min-width: 169px;
+    height: 56px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -126,8 +154,11 @@ img {
     color: #FFFFFF;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn:hover {
     background: #404BBF;
@@ -154,6 +185,13 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.features-list {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% - 3*24px)/4);
+}
+
 .features-title {
     font-weight: 500;
     font-size: 20px;
@@ -180,9 +218,17 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
+    text-align: center;
     color: var(--title-color)
+    
 }
 
+.function-list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc((100% - 2*24px)/3);
+    gap: 24px;
+}
 
 /*------------------ SECTION 3 -------------------*/
 
@@ -190,9 +236,16 @@ img {
     background: #F4F4FD;
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc((100% - 3*24px)/4);
+    gap: 24px;
+}
 .team-content {
     padding-top: 32px;
     padding-bottom: 32px;
+    text-align: center;
 }
 .team-title {
     font-size: 36px;
@@ -201,6 +254,7 @@ img {
     text-transform: capitalize;
     padding-top: 120px;
     padding-bottom: 72px;
+    text-align: center;
     color: var(--title-color)
     
 }
@@ -229,6 +283,7 @@ img {
     padding-bottom: 100px;
 }
 .footer-text {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
