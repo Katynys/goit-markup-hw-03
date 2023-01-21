@@ -237,6 +237,7 @@ img {
 
 .team {
     background: #F4F4FD;
+    padding-top: 120px;
 }
 
 .team-list {
@@ -255,7 +256,6 @@ img {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-top: 120px;
     margin-bottom: 72px;
     text-align: center;
     color: var(--title-color)
